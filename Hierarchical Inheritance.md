@@ -1,40 +1,43 @@
 # Exp.No:25  
 ## Hierarchical Inheritance
 
----
-
 ### AIM  
-To write a Python program to get the employee and doctor details and display them using hierarchical inheritance. Create a parent (base) class named `Details` and two child (derived) classes named `Employee` and `Doctor`.
-
----
-
+To create a Python program that calculates the addition, subtraction, and division using multiple inheritance.
 ### ALGORITHM
 
-1. **Begin the program.**
-2. **Create a class Details** with an `__init__` method to initialize three attributes: `id`, `name`, and `gender`.
-3. **Define a method display_details()** to print the values of `id`, `name`, and `gender`.
-4. **Create a class Employee** that inherits from the `Details` class. 
-   - Add two additional attributes: `company` and `department`.
-   - Override the `display_details()` method to print the employee-specific attributes (`company` and `department`) along with the inherited details.
-5. **Create a class Doctor** that also inherits from the `Details` class. 
-   - Add two additional attributes: `hospital` and `department`.
-   - Override the `display_details()` method to print the doctor-specific attributes (`hospital` and `department`) along with the inherited details.
-6. **Accept input** for employee and doctor details.
-7. **Create objects of Employee and Doctor** using the input.
-8. **Call the `display_details()` method** for both objects to print the details.
-9. **Terminate the program.**
-
----
+1. Define class c1 with a method add(self, a, b) to return the sum of a and b.
+2. Define class c2 with a method sub(self, a, b) to return the difference between a and b.
+3. Define class divi that inherits from both c1 and c2, and add a method div(self, a, b) to return the division result of a and b.
+4. Take user input for a and b.
+5. Instantiate the class divi.
+6. Call the add(), sub(), and div() methods to perform the respective operations.
+7. Display the results.
+8. Terminate the program.
 
 ### PROGRAM
 ```
+class c1:  
+    def add(self, a, b):  
+        return a + b  
 
+class c2:  
+    def sub(self, a, b):  
+        return a - b  
 
+class divi(c1, c2):
+    def div(self, a, b):  
+        return float(a / b)  
+
+a = int(input())
+b = int(input())
+d = divi()  
+print(d.add(a, b))  
+print(d.sub(a, b))  
+print(d.div(a, b))
 ```
-
 ### OUTPUT  
 
-(Output Screenshot)  
-
+![image](https://github.com/user-attachments/assets/34f5ff13-1bc6-4873-8a4b-286c518476c9)
 
 ### RESULT
+Thus the Python program to perform addition, subtraction, and division using multiple inheritance has been implemented and executed successfully.
