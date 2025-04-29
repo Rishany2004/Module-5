@@ -1,4 +1,4 @@
-# Exp.No:23  
+## Exp.No:23  
 ## SEB-Check Exam Eligibility Using Inheritance
 ### AIM  
 To write a Python program to get the name, attendance, and ID of a student and check their eligibility for the exam using multiple inheritance.
@@ -54,7 +54,7 @@ else:
 
 ```
 ### OUTPUT
-
+![image](https://github.com/user-attachments/assets/520c792a-0ef3-47cc-80bc-a7d320895865)
 
 ### RESULT
 
